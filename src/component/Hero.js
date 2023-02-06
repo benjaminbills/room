@@ -43,7 +43,7 @@ const Hero = () => {
       <div className='absolute bottom-0 right-0 top-[320px] md:w-[100%] md:top-[480px] text-red flex '>
         <div className='flex w-full'>
           <span className='md:w-7/12'></span>
-          <div className='md:w-1/12 '>
+          <div className='md:w-1/12 w-[80px]'>
             <div className='flex h-10 bg-black text-white justify-between md:h-[80px] w-full'>
               <button className='focus:bg-gray-600 w-1/2' onClick={handlePrev}>
                 <svg
@@ -52,7 +52,7 @@ const Hero = () => {
                   viewBox='0 0 24 24'
                   strokeWidth={1.5}
                   stroke='currentColor'
-                  className='w-6 h-6 md:w-8 md:h-8'
+                  className='w-5 h-5 md:w-8 md:h-8 mr-auto ml-2'
                 >
                   <path
                     strokeLinecap='round'
@@ -71,7 +71,7 @@ const Hero = () => {
                   viewBox='0 0 24 24'
                   strokeWidth={1.5}
                   stroke='currentColor'
-                  className='w-6 h-6 md:w-8 md:h-8 ml-auto'
+                  className='w-5 h-5 md:w-8 md:h-8 ml-auto mr-2'
                 >
                   <path
                     strokeLinecap='round'
