@@ -31,16 +31,58 @@ const Hero = () => {
     <div className='relative md:flex  w-full'>
       <div className='md:min-h-[534px] md:w-7/12'>
         {/* <h1 className='text-3xl'>Hello world!</h1> */}
-        <img
-          src={items[activeIndex].src}
-          alt={items[activeIndex].altText}
-          // min-h-[360px]
-          className=' w-full md:min-h-[560px] md:max-h-[560px]  max-h-[360px] '
-        />
+        <div className='relative'>
+          <img
+            src={items[activeIndex].src}
+            alt={items[activeIndex].altText}
+            // min-h-[360px]
+            className=' w-full md:min-h-[560px] md:max-h-[560px]  max-h-[360px] '
+          />
+          <div className='absolute bottom-0 right-0 md:hidden h-10 bg-black text-white justify-between w-[80px]'>
+            <button
+              className='focus:bg-gray-600 w-1/2 h-full'
+              onClick={handlePrev}
+            >
+              <svg
+                xmlns='http://www.w3.org/2000/svg'
+                fill='none'
+                viewBox='0 0 24 24'
+                strokeWidth={1.5}
+                stroke='currentColor'
+                className='w-5 h-5 md:w-8 md:h-8 mr-auto ml-2'
+              >
+                <path
+                  strokeLinecap='round'
+                  strokeLinejoin='round'
+                  d='M15.75 19.5L8.25 12l7.5-7.5'
+                />
+              </svg>
+            </button>
+            <button
+              className='focus:bg-gray-600 w-1/2  h-full'
+              onClick={handleNext}
+            >
+              <svg
+                xmlns='http://www.w3.org/2000/svg'
+                fill='none'
+                viewBox='0 0 24 24'
+                strokeWidth={1.5}
+                stroke='currentColor'
+                className='w-5 h-5 md:w-8 md:h-8 ml-auto mr-2'
+              >
+                <path
+                  strokeLinecap='round'
+                  strokeLinejoin='round'
+                  d='M8.25 4.5l7.5 7.5-7.5 7.5'
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
       </div>
       {/* absolute bottom-0 right-0 md:right-[-7em] */}
       {/* md:fixed absolute bottom-0 right-0 md:w-[100%] md:top-[460px] text-red flex */}
-      <div className='absolute bottom-0 right-0 top-[320px] md:w-[100%] md:top-[480px] text-red flex '>
+      <div className='hidden md:block absolute bottom-0 right-0 top-[320px] md:w-[100%] md:top-[480px] text-red flex '>
         <div className='flex w-full'>
           <span className='md:w-7/12'></span>
           <div className='md:w-1/12 w-[80px]'>
