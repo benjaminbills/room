@@ -10,7 +10,7 @@ const Home = () => {
         {/* <div className=''> */}
         <div className='bg-hero2 w-full min-h-[266px] bg-cover bg-no-repeat md:w-1/3'></div>
         {/* </div> */}
-        <div className='pt-10 pl-4 pr-4 pb-8 md:w-1/3'>
+        <div className='pt-12 pl-7 pr-7 pb-12 md:w-1/3'>
           <h1 className='font-semibold average-letter-spacing'>
             ABOUT OUR FURNITURE
           </h1>

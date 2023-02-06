@@ -127,9 +127,10 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className='container pt-10 md:pt-0 my-auto  pl-4 pr-4  md:w-5/12  lg:pl-12 lg:pr-12 sm:pr-6 sm:pl-6 max-[760px]:mb-6  '>
-        <h2 className='font-bold text-4xl'>
-          Discover innovative ways to decorate
+      <div className='container md:pt-0 my-auto  pl-7 pr-7  md:w-5/12  lg:pl-12 lg:pr-12 sm:pr-6 sm:pl-6 max-[767px]:mb-12 max-[767px]:mt-12 '>
+        <h2 className='font-semibold text-5xl max-[1074px]:text-4xl '>
+          Discover innovative <br className='hidden md:block' /> ways to
+          decorate
         </h2>
         <p className='pt-4 text-gray-500 pb-8 md:text-lg'>
           We provide unmatched quality, comfort, and style for property owners
