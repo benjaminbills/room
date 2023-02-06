@@ -34,24 +34,25 @@ const Hero = () => {
         <img
           src={items[activeIndex].src}
           alt={items[activeIndex].altText}
-          className=' w-full md:min-h-[560px] md:max-h-[560px] min-h-[360px] max-h-[360px] '
+          // min-h-[360px]
+          className=' w-full md:min-h-[560px] md:max-h-[560px]  max-h-[360px] '
         />
       </div>
       {/* absolute bottom-0 right-0 md:right-[-7em] */}
       {/* md:fixed absolute bottom-0 right-0 md:w-[100%] md:top-[460px] text-red flex */}
-      <div className='absolute bottom-0 right-0 top-[320px] md:w-[100%] md:top-[460px] text-red flex '>
+      <div className='absolute bottom-0 right-0 top-[320px] md:w-[100%] md:top-[480px] text-red flex '>
         <div className='flex w-full'>
           <span className='md:w-7/12'></span>
           <div className='md:w-1/12 '>
-            <div className='flex h-10 bg-black text-white justify-between md:h-[100px] w-full'>
-              <button className='focus:bg-gray-600' onClick={handlePrev}>
+            <div className='flex h-10 bg-black text-white justify-between md:h-[80px] w-full'>
+              <button className='focus:bg-gray-600 w-1/2' onClick={handlePrev}>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
                   fill='none'
                   viewBox='0 0 24 24'
                   strokeWidth={1.5}
                   stroke='currentColor'
-                  className='w-6 h-6 md:w-10 md:h-10'
+                  className='w-6 h-6 md:w-8 md:h-8'
                 >
                   <path
                     strokeLinecap='round'
@@ -60,14 +61,17 @@ const Hero = () => {
                   />
                 </svg>
               </button>
-              <button className='focus:bg-gray-600' onClick={handleNext}>
+              <button
+                className='focus:bg-gray-600 w-1/2  '
+                onClick={handleNext}
+              >
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
                   fill='none'
                   viewBox='0 0 24 24'
                   strokeWidth={1.5}
                   stroke='currentColor'
-                  className='w-6 h-6 md:w-10 md:h-10'
+                  className='w-6 h-6 md:w-8 md:h-8 ml-auto'
                 >
                   <path
                     strokeLinecap='round'
